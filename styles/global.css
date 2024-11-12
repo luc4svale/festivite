@@ -38,6 +38,27 @@
   /* text colors */
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
+
+  /* font families */
+  --font-leckerli: "Leckerli One", cursive;
+  --font-baloo-2: "Baloo 2", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+
+  /* font weights */
+  --regular: 400;
+  --semibold: 600;
+  --bold: 700;
+
+  /* font general properties */
+  --text-logo: var(--regular) 2.5rem/auto var(--font-leckerli);
+
+  --text-heading-md: var(--bold) 1.75rem/auto var(--font-baloo-2);
+  --text-heading-sm: var(--bold) 1.125rem/auto var(--font-baloo-2);
+
+  --text-body-md: var(--regular) 1rem/auto var(--font-open-sans);
+  --text-body-sm: var(--regular) 0.875rem/auto var(--font-open-sans);
+  --text-body-xs: var(--regular) 0.75rem/auto var(--font-open-sans);
+
 }
 
 
