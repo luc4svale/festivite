@@ -1,0 +1,36 @@
+aside {
+  width: 32.21%;
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  
+  header {
+    margin: 2rem 2rem 0;
+
+    img {
+      width: 2.865625rem;
+      height: 3rem;
+      object-fit: cover;
+    }
+
+    h1 {
+      font: var(--logo);
+      color: var(--pink);
+      margin-block: 1rem 0.25rem;
+    }
+
+    span {
+      font-weight: var(--light);
+      color: var(--text-heading);
+    }
+  }
+
+  & > img {
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
