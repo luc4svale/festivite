@@ -45,20 +45,38 @@
   --font-open-sans: "Open Sans", sans-serif;
 
   /* font weights */
+  --light: 300;
   --regular: 400;
   --semibold: 600;
   --bold: 700;
 
+
   /* font general properties */
-  --text-logo: var(--regular) 2.5rem/auto var(--font-leckerli);
+  --logo: var(--regular) 2.5rem/normal var(--font-leckerli);
 
-  --text-heading-md: var(--bold) 1.75rem/auto var(--font-baloo-2);
-  --text-heading-sm: var(--bold) 1.125rem/auto var(--font-baloo-2);
+  --heading-md: var(--bold) 1.75rem/normal var(--font-baloo-2);
+  --heading-sm: var(--bold) 1.125rem/normal var(--font-baloo-2);
 
-  --text-body-md: var(--regular) 1rem/auto var(--font-open-sans);
-  --text-body-sm: var(--regular) 0.875rem/auto var(--font-open-sans);
-  --text-body-xs: var(--regular) 0.75rem/auto var(--font-open-sans);
+  --body-md: var(--regular) 1rem/normal var(--font-open-sans);
+  --body-sm: var(--regular) 0.875rem/normal var(--font-open-sans);
+  --body-xs: var(--regular) 0.75rem/normal var(--font-open-sans);
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--shape-background);
+  font: var(--body-md);
+  color: var(--text-body);
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 
