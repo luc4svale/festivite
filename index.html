@@ -30,8 +30,77 @@
     </aside>
 
     <main>
+      <h2>Crie seu convite</h2>
+      <form>
+        <fieldset id="event-info">
+          <legend>
+            <i data-lucide="calendar" class="icon"></i>
+            <span>Sobre o evento</span>
+          </legend>
+          
+          <div class="input-wrapper">
+            <label for="title">Título</label>
+            <input type="text" name="title" id="title" placeholder="Nome do evento">
+          </div>
+
+          <div class="flex gap-16">
+            <div class="input-wrapper flex-1">
+              <label for="start">Ínicio</label>
+              <input type="datetime-local" name="start" id="start"/>
+            </div>
+            <div class="input-wrapper flex-1">
+              <label for="end">Fim</label>
+              <input 
+                type="datetime-local" name="end" id="end"/>
+            </div>
+          </div>
+
+          <div class="flex gap-16">
+            <div class="input-wrapper flex-1 width-50">
+              <span class="label">Tipo</span>
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <input type="radio" name="type" id="personal" value="personal" checked>
+                  <i data-lucide="building-2" class="icon"></i>
+                  <label for="personal">Presencial</label>
+                </div>
+
+                <div class="radio-inner">
+                  <input type="radio" name="type" id="online" value="online">
+                  <i data-lucide="video" class="icon"></i>
+                  <label for="online">Online</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-wrapper flex-1 width-50">
+              <label for="address">Local</label>
+              <input 
+                type="text" 
+                name="address" id="address"
+                placeholder="Link ou endereço"
+                autocomplete="on"
+              />
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="description">Descrição</label>
+            <textarea 
+              name="description" id="description" 
+              placeholder="Escreva sobre os detalhes do evento"
+              rows="5"
+            ></textarea>
+          </div>
+
+        </fieldset>
+      </form>
     </main>
   </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 
 </html>

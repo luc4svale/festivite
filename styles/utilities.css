@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.gap-16 {
+  gap: 1rem;
+}

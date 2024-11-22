@@ -3,4 +3,11 @@ main {
   padding: 5rem 8.125rem;
   background-color: var(--shape-body);
   border-radius: 0.75rem;
+  overflow: auto;
+
+  h2 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+    margin-bottom: 2.5rem;
+  }
 }
