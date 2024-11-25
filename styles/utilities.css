@@ -6,10 +6,70 @@
   flex-grow: 1;
 }
 
+.flex-2 {
+  flex-grow: 2;
+}
+
 .width-50 {
   width: 50%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.width-70 {
+  width: 70%;
 }
 
 .gap-16 {
   gap: 1rem;
 }
+
+.bg-brand-light {
+  background-color: var(--brand-light);
+}
+
+.bg-accent-navy {
+  background-color: var(--navy);
+}
+
+.bg-accent-purple {
+  background-color: var(--purple);
+}
+
+.bg-accent-fuschia {
+  background-color: var(--fuschia);
+}
+
+.bg-accent-pink {
+  background-color: var(--pink);
+}
+
+.bg-feedback-danger {
+  background-color: var(--danger);
+}
+
+.bg-accent-orange {
+  background-color: var(--orange);
+}
+
+.bg-accent-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-accent-lime {
+  background-color: var(--lime);
+}
+
+.bg-accent-green {
+  background-color: var(--green);
+}
+
+.bg-accent-cyan {
+  background-color: var(--cyan);
+}
+
+
+
+

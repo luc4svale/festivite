@@ -1,4 +1,8 @@
 form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
   & fieldset {
     border: none;
     display: flex;
@@ -30,5 +34,19 @@ form {
       margin-bottom: 0.75rem;
       font: var(--body-sm);
     }
+
+    &#customization-info {
+      gap: 1.75rem;
+
+      & .input-wrapper:not(:has(input[name="style"])) .label {
+        margin-bottom: 1rem;
+      }
+    }
+
+    & .input-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
   }
 }
