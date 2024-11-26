@@ -53,6 +53,10 @@
         font: var(--body-sm);
         font-weight: var(--semibold);
       }
+
+      &:hover {
+        background-color: var(--shape-hover);
+      }
     }
 
     & > span {

@@ -1,0 +1,49 @@
+form .checkbox-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  & label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    padding-block: 0.25rem;
+
+    & input,
+    & input:focus,
+    & input:focus-within,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    & .icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      display: inline-block;
+      padding: 0.125rem;
+      border: 1px solid var(--input-stroke);
+      border-radius: 0.25rem;
+      stroke: var(--input-base);
+      background-color: var(--input-base);
+    }
+
+    & span {
+      font: var(--body-sm);
+
+      & a {
+        font-weight: var(--semibold);
+        color: var(--brand-light);
+      }
+    }
+
+    &:has(input:checked) {
+      & .icon {
+        stroke: var(--brand-light);
+        border-color: var(--brand-light);
+      }
+    }
+    
+  }
+}
