@@ -80,7 +80,7 @@
             </div>
           </div>
 
-          <div class="input-wrapper">
+          <div class="textarea-wrapper">
             <label for="description">Descrição</label>
             <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"
               rows="5"></textarea>
@@ -253,12 +253,12 @@
               </div>
             </div>
 
-            <div class="input-wrapper width-70">
+            <div class="droparea-wrapper width-70">
               <label for="cover-photo">Foto de capa</label>
-              <div class="droparea-wrapper">
+              <div class="dropzone">
                 <input type="file" name="cover-photo" id="cover-photo"
                   onchange="this.classList.toggle('filled', this.files.length > 0)">
-                <label class="dropzone"for="cover-photo">
+                <label for="cover-photo">
                   <div class="upload-button">
                     <i data-lucide="upload" class="icon"></i>
                     <span>Selecionar</span>

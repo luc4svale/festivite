@@ -38,7 +38,9 @@ form {
     }
   }
 
-  & .input-wrapper {
+  & .input-wrapper,
+  & .droparea-wrapper, 
+  & .textarea-wrapper {
     display: flex;
     flex-direction: column;
 
@@ -63,8 +65,8 @@ form {
       }
     }
 
-    &:has(input:required:invalid) {
-      & input {
+    &:has(:required:invalid) {
+      & input, textarea {
         border-color: var(--danger);
       }
 

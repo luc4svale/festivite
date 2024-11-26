@@ -1,4 +1,4 @@
-.droparea-wrapper {
+.droparea-wrapper .dropzone {
   display: flex;
   align-items: center;
   position: relative;
@@ -9,6 +9,7 @@
     color: transparent;
     border-color: transparent;
     background-color: transparent;
+    opacity: 0;
 
     &::file-selector-button { 
       width: 7.5rem;
@@ -24,7 +25,7 @@
     }
   }
 
-  & label.dropzone {
+  & label {
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -61,12 +62,14 @@
   }
 
   &:has(.filled) {
-    & label.dropzone > span {
+    & label > span {
         color: transparent;
+        opacity: 0
     }
     
     & input { 
       color: var(--text-body);
+      opacity: 1;
     }
   }
 
