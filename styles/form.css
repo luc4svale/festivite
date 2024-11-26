@@ -32,7 +32,7 @@ form {
 
     &#customization-info {
       gap: 1.75rem;
-  
+
       & .input-wrapper:not(:has(input[name="style"])) .label {
         margin-bottom: 1rem;
       }
@@ -46,12 +46,12 @@ form {
   }
 
   & .input-wrapper,
-  & .droparea-wrapper, 
+  & .droparea-wrapper,
   & .textarea-wrapper {
     display: flex;
     flex-direction: column;
 
-    & label, 
+    & label,
     & .label {
       display: block;
       margin-bottom: 0.75rem;
@@ -75,7 +75,9 @@ form {
     }
 
     &:has(:required:invalid) {
-      & input, textarea {
+
+      & input,
+      textarea {
         border-color: var(--danger);
       }
 

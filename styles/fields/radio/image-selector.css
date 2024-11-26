@@ -14,6 +14,7 @@
     border: 1px solid transparent;
     border-radius: 0.5rem;
     background-color: var(--shape-button);
+    cursor: pointer;
 
     & img {
       width: 7.875rem;
@@ -22,7 +23,7 @@
       border-radius: 0.375rem;
     }
 
-    &:has(input:hover) { 
+    &:has(input:hover) {
       background-color: var(--shape-hover);
     }
 

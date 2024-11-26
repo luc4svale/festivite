@@ -13,6 +13,7 @@
     border: 0.125rem solid transparent;
     border-radius: 50%;
     background-color: var(--shape-button);
+    cursor: pointer;
 
 
     label {
@@ -21,7 +22,7 @@
       border-radius: 50%;
     }
 
-    &:has(input:hover) { 
+    &:has(input:hover) {
       background-color: var(--shape-hover);
     }
 

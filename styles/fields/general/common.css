@@ -1,5 +1,5 @@
-input, 
-select, 
+input,
+select,
 textarea {
   appearance: none;
   width: 100%;
@@ -11,7 +11,8 @@ textarea {
   color: var(--text-heading);
   background-color: var(--input-base);
 
-  &:focus, &:focus-within {
+  &:focus,
+  &:focus-within {
     border-color: var(--brand-light);
   }
 }

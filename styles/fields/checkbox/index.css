@@ -27,14 +27,18 @@ form .checkbox-wrapper {
       border-radius: 0.25rem;
       stroke: var(--input-base);
       background-color: var(--input-base);
+      z-index: 100;
+      cursor: pointer;
     }
 
     & span {
       font: var(--body-sm);
+      z-index: 100;
 
       & a {
         font-weight: var(--semibold);
         color: var(--brand-light);
+        cursor: pointer;
       }
     }
 
@@ -44,6 +48,6 @@ form .checkbox-wrapper {
         border-color: var(--brand-light);
       }
     }
-    
+
   }
 }

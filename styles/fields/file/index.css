@@ -11,7 +11,7 @@
     background-color: transparent;
     opacity: 0;
 
-    &::file-selector-button { 
+    &::file-selector-button {
       width: 7.5rem;
       height: 2.5rem;
       position: absolute;
@@ -33,7 +33,7 @@
     margin-bottom: 0;
     cursor: pointer;
 
-    & .upload-button { 
+    & .upload-button {
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -59,19 +59,19 @@
       }
     }
 
-    & > span {
+    &>span {
       color: var(--input-placeholder);
       font: var(--body-md);
     }
   }
 
   &:has(.filled) {
-    & label > span {
-        color: transparent;
-        opacity: 0
+    & label>span {
+      color: transparent;
+      opacity: 0
     }
-    
-    & input { 
+
+    & input {
       color: var(--text-body);
       opacity: 1;
     }
