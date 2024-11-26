@@ -1,3 +1,5 @@
-@import url(./general.css);
-@import url(./radio.css);
-@import url(./file.css);
+@import url(./general/index.css);
+@import url(./textarea/index.css);
+@import url(./datetime/index.css);
+@import url(./file/index.css);
+@import url(./radio/index.css);

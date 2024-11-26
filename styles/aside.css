@@ -13,10 +13,10 @@ aside {
       object-fit: cover;
     }
 
-    h1 {
+    h1 {      
+      margin-block: 1rem 0.25rem;
       font: var(--logo);
       color: var(--pink);
-      margin-block: 1rem 0.25rem;
     }
 
     span {

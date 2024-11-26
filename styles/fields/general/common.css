@@ -1,0 +1,17 @@
+input, 
+select, 
+textarea {
+  appearance: none;
+  width: 100%;
+  padding: 0.8125rem 1rem;
+  outline: none;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  font: var(--body-md);
+  color: var(--text-heading);
+  background-color: var(--input-base);
+
+  &:focus, &:focus-within {
+    border-color: var(--brand-light);
+  }
+}

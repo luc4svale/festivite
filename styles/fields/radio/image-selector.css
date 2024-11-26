@@ -1,0 +1,29 @@
+.radio-wrapper.image-selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+
+  & .radio-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    padding: 0.25rem 0.25rem 0.5rem;
+    outline: 1px solid var(--input-stroke);
+    border: 0.125rem solid transparent;
+    border-radius: 0.5rem;
+    background-color: var(--shape-button);
+
+    & img {
+      width: 7.875rem;
+      height: 4rem;
+      object-fit: cover;
+      border-radius: 0.25rem;
+    }
+
+    &:has(input:checked) {
+      border-color: var(--brand-light);
+    }
+  }
+}

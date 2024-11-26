@@ -65,9 +65,9 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: var(--shape-background);
   font: var(--body-md);
   color: var(--text-body);
+  background-color: var(--shape-background);
   overflow: hidden;
 }
 

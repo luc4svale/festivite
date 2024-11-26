@@ -45,21 +45,21 @@
           </div>
 
           <div class="flex gap-16">
-            <div class="input-wrapper flex-1">
+            <div class="input-wrapper width-50">
               <label for="start">Ínicio</label>
               <input type="datetime-local" name="start" id="start" />
             </div>
 
-            <div class="input-wrapper flex-1">
+            <div class="input-wrapper width-50">
               <label for="end">Fim</label>
               <input type="datetime-local" name="end" id="end" />
             </div>
           </div>
 
           <div class="flex gap-16">
-            <div class="input-wrapper flex-1 width-50">
+            <div class="input-wrapper width-50">
               <span class="label">Tipo</span>
-              <div class="radio-wrapper">
+              <div class="radio-wrapper switch-selector">
                 <div class="radio-inner">
                   <input type="radio" name="type" id="personal" value="personal" checked>
                   <i data-lucide="building-2" class="icon"></i>
@@ -74,7 +74,7 @@
               </div>
             </div>
 
-            <div class="input-wrapper flex-1 width-50">
+            <div class="input-wrapper width-50">
               <label for="address">Local</label>
               <input type="text" name="address" id="address" placeholder="Link ou endereço" autocomplete="on" />
             </div>
@@ -93,9 +93,9 @@
             <span>Personalização</span>
           </legend>
 
-          <div class="input-wraper">
+          <div class="input-wrapper">
             <span class="label">Cor principal</span>
-            <div class="radio-wrapper">
+            <div class="radio-wrapper color-selector">
               <div class="radio-inner">
                 <input type="radio" name="color" id="brand-light" value="brand-light">
                 <label class="bg-brand-light" for="brand-light"></label>
@@ -155,8 +155,7 @@
 
           <div class="input-wrapper">
             <span class="label">Tema do evento</span>
-            <div class="radio-wrapper">
-
+            <div class="radio-wrapper image-selector">
               <div class="radio-inner">
                 <img src="./assets/images/birthday.png" alt="Imagem de bolo de aniversário">
                 <input type="radio" name="theme" id="birthday" value="birthday" checked>
@@ -235,19 +234,19 @@
           </div>
 
           <div class="flex gap-16">
-
             <div class="input-wrapper width-30">
               <span class="label">Estilo</span>
-              <div class="radio-wrapper">
+              <div class="radio-wrapper switch-slider">
                 <div class="radio-inner">
                   <label for="dark">
-                    <input type="radio" name="style" id="dark" value="dark" checked>
+                    <input type="radio" name="style" id="dark" value="dark" checked class="option-1">
                   </label>
                   <span>Escuro</span>
                 </div>
+
                 <div class="radio-inner">
                   <label for="light">
-                    <input type="radio" name="style" id="light" value="light">
+                    <input type="radio" name="style" id="light" value="light" class="option-2">
                   </label>
                   <span>Claro</span>
                 </div>
@@ -256,13 +255,10 @@
 
             <div class="input-wrapper width-70">
               <label for="cover-photo">Foto de capa</label>
-              <div class="droparea">
-                <input 
-                type="file" 
-                name="cover-photo" id="cover-photo"
-                onchange="this.classList.toggle('filled', this.files.length > 0)"
-                >
-                <label for="cover-photo">
+              <div class="droparea-wrapper">
+                <input type="file" name="cover-photo" id="cover-photo"
+                  onchange="this.classList.toggle('filled', this.files.length > 0)">
+                <label class="dropzone"for="cover-photo">
                   <div class="upload-button">
                     <i data-lucide="upload" class="icon"></i>
                     <span>Selecionar</span>
@@ -270,7 +266,39 @@
                   <span>Nenhum arquivo selecionado</span>
                 </label>
               </div>
+            </div>
+          </div>
+        </fieldset>
 
+        <fieldset id="contact-info">
+          <legend>
+            <i data-lucide="contact" class="icon"></i>
+            <span>Dados para contato</span>
+          </legend>
+
+          <div class="input-wrapper">
+            <label for="fullname">Nome</label>
+            <input 
+              type="text" 
+              name="fullname" id="fullname" 
+              placeholder="Nome completo" 
+              required
+            >
+            <small class="error-message">
+              <i data-lucide="circle-alert" class="icon"></i>
+              <span>Campo obrigatório</span>
+            </small>
+          </div>
+
+          <div class="flex gap-16">
+            <div class="input-wrapper width-50">
+              <label for="mail">Email</label>
+              <input type="email" name="mail" id="mail" placeholder="exemplo@email.com">
+            </div>
+
+            <div class="input-wrapper width-50">
+              <label for="phone">Telefone</label>
+              <input type="tel" name="phone" id="phone" placeholder="(99) 99999-9999" autocomplete="on">
             </div>
           </div>
         </fieldset>

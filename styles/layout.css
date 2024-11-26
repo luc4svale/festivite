@@ -2,8 +2,8 @@
   width: 100vw;
   max-width: 80rem;
   height: 100vh;
-  padding: 1.25rem;
   display: flex;
   gap: 1.25rem;
+  padding: 1.25rem;
   overflow: hidden;
 }

@@ -1,0 +1,38 @@
+.radio-wrapper.switch-selector {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  background-color: var(--input-base);
+
+  .radio-inner {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    padding-block: 0.65625rem;
+    border-radius: 0.25rem;
+
+    & .icon {
+      width: 1rem;
+      height: 1rem;
+      stroke: var(--input-placeholder);
+    }
+
+    &:has(input:checked) {
+      background-color: var(--shape-button);
+
+      & .icon {
+        stroke: var(--brand-light);
+      }
+
+      & label {
+        font-weight: var(--semibold);
+        color: var(--text-heading);
+      }
+    }
+  }
+}

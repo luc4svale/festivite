@@ -1,0 +1,14 @@
+.radio-wrapper .radio-inner {
+  & label {
+    margin-bottom: 0;
+  }
+
+  & input,
+  & input:focus,
+  & input:focus-within,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+}
